@@ -30,7 +30,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("kfood_zip", type=Path)
     ap.add_argument("--out", type=Path, default=ROOT / "ml" / "data" / "raw")
-    ap.add_argument("--foods", type=Path, default=ROOT / "ml" / "foods-v1.json")
+    ap.add_argument("--foods", type=Path, default=ROOT / "data" / "foods-v1.json")
     args = ap.parse_args()
 
     foods = json.loads(args.foods.read_text(encoding="utf-8"))["foods"]
