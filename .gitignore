@@ -221,3 +221,30 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ===== NutriScan =====
+# AWS credentials (never commit)
+*accessKeys*.csv
+*credentials*
+*.pem
+
+# SAM build output
+.aws-sam/
+
+# Model artifacts (stored in S3 models/)
+*.pth
+*.pt
+*.onnx
+*.tar.gz
+
+# Datasets (AI Hub raw images: large, no redistribution)
+ml/data/
+*.zip
+
+# Claude local settings
+.claude/settings.local.json
+
+# Web / OS
+node_modules/
+.DS_Store
+Thumbs.db
